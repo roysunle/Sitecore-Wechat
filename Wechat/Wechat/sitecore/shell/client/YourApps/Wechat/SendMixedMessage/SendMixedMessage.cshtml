@@ -1,0 +1,30 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    rendering.Class = "sc-SendMixedMessage";
+    rendering.Requires.Script("client", "SendMixedMessage.js");
+    rendering.GetString("input", "input");
+    var htmlAttributes = rendering.HtmlAttributes;
+}      
+<div @htmlAttributes>
+    <table class="table table-hover">
+    <thead>
+        <tr style="background-color:lightgrey">
+            <th>标题</th>
+            <th>上传时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach:output">
+        <tr>
+            <td><label data-bind="text: title"></label></td>
+            <td><label data-bind="text: updateTime"></label></td>
+            <td><button  onclick="Sitecore.app.SendMixedMessage1.preview(this);" data-bind="value: id">预览</button><button  onclick="Sitecore.app.SendMixedMessage1.send(this);" data-bind="value: id">发送</button></td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

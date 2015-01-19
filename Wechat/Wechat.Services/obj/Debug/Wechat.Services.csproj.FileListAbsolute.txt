@@ -1,0 +1,5 @@
+D:\project\Wechat\Wechat\Wechat.Services\bin\Debug\Wechat.Services.dll
+D:\project\Wechat\Wechat\Wechat.Services\bin\Debug\Wechat.Services.pdb
+D:\project\Wechat\Wechat\Wechat.Services\obj\Debug\Wechat.Services.csprojResolveAssemblyReference.cache
+D:\project\Wechat\Wechat\Wechat.Services\obj\Debug\Wechat.Services.dll
+D:\project\Wechat\Wechat\Wechat.Services\obj\Debug\Wechat.Services.pdb

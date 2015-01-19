@@ -1,0 +1,7 @@
+D:\project\Wechat\Wechat\Wechat.Tasks\bin\Debug\Wechat.Tasks.dll
+D:\project\Wechat\Wechat\Wechat.Tasks\bin\Debug\Wechat.Tasks.pdb
+D:\project\Wechat\Wechat\Wechat.Tasks\bin\Debug\Wechat.Services.dll
+D:\project\Wechat\Wechat\Wechat.Tasks\bin\Debug\Wechat.Services.pdb
+D:\project\Wechat\Wechat\Wechat.Tasks\obj\Debug\Wechat.Tasks.csprojResolveAssemblyReference.cache
+D:\project\Wechat\Wechat\Wechat.Tasks\obj\Debug\Wechat.Tasks.dll
+D:\project\Wechat\Wechat\Wechat.Tasks\obj\Debug\Wechat.Tasks.pdb

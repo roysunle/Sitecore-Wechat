@@ -1,0 +1,42 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    rendering.Class = "sc-MaterialManagement";
+    rendering.Requires.Script("client", "MaterialManagement.js");
+    rendering.GetString("input", "input");
+    var htmlAttributes = rendering.HtmlAttributes;
+}      
+    <script src="/Script/Wechat/bootstrap.min.js" type="text/javascript"></script>
+    
+    <link href="/Script/Wechat/bootstrap.css" rel="stylesheet">
+<div @htmlAttributes>
+    <table class="table table-hover">
+        <thead>
+            <tr style="background-color:lightgrey">
+                <th>标题</th>
+                <th>上传时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach:output">
+            <tr>
+                <td><label data-bind="text: title"></label></td>
+                <td><label data-bind="text: updateTime"></label></td>
+                <td><a data-bind="attr: { href: '/sitecore/client/Your Apps/Wechat/EditMixedMessage?id=' + id }">修改</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pagination" data-bind="foreach: pager">
+        <ul>
+        <li >
+            <a href="#" data-bind="text: number" onclick="Sitecore.app.MaterialManagement1.updateData(this.text);">
+                
+            </a>
+        </li>
+        </ul>
+    </div>
+</div>
